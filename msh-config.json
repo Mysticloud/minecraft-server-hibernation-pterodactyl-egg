@@ -1,26 +1,28 @@
 {
-  "Server": {
-    "Folder": "./",
+    "Commands": {
+        "StartServer": "java \u003cCommands.StartServerParam\u003e -jar \u003cServer.FileName\u003e nogui",
+        "StartServerParam": "-Xmx1024M -Xms1024M -Xmn128m -XX:+DisableExplicitGC -XX:+UseNUMA -XX:MaxTenuringThreshold=15 -XX:MaxGCPauseMillis=30 -XX:GCPauseIntervalMillis=150 -XX:-UseGCOverheadLimit -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -XX:+UseCompressedOops -XX:+OptimizeStringConcat  -XX:ReservedCodeCacheSize=2048m -XX:+UseCodeCacheFlushing -XX:SoftRefLRUPolicyMSPerMB=2000 -XX:ParallelGCThreads=10",
+        "StopServer": "stop",
+        "StopServerAllowKill": 10
+    },
     "FileName": "server.jar",
-    "Version": "1.17.1",
-    "Protocol": 756
-  },
-  "Commands": {
-    "StartServer": "java <Commands.StartServerParam> -jar <Server.FileName> nogui",
-    "StartServerParam": "-Xmx1024M -Xms1024M -Xmn128m -XX:+DisableExplicitGC -XX:+UseNUMA -XX:MaxTenuringThreshold=15 -XX:MaxGCPauseMillis=30 -XX:GCPauseIntervalMillis=150 -XX:-UseGCOverheadLimit -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -XX:+UseCompressedOops -XX:+OptimizeStringConcat  -XX:ReservedCodeCacheSize=2048m -XX:+UseCodeCacheFlushing -XX:SoftRefLRUPolicyMSPerMB=2000 -XX:ParallelGCThreads=10",
-    "StopServer": "stop",
-    "StopServerAllowKill": 10
-  },
-  "Msh": {
-    "ID": "52fdfc0721feefe75af65af163f82654f163f",
-    "Debug": 1,
-    "AllowSuspend": false,
-    "InfoHibernation": "                  §fMystiClouds Free\n                   §b§lHIBERNATING",
-    "InfoStarting": "                   §fMystiClouds Free:\n                    §6§lWARMING UP",
-    "NotifyUpdate": true,
-    "NotifyMessage": true,
-    "ListenPort": 25555,
-    "TimeBeforeStoppingEmptyServer": 30,
-    "Whitelist": []
-  }
+    "Msh": {
+        "AllowSuspend": false,
+        "Debug": 1,
+        "ID": "52fdfc0721feefe75af65af163f82654f163f",
+        "InfoHibernation": "                  §fMystiClouds Free\n                   §b§lHIBERNATING",
+        "InfoStarting": "                   §fMystiClouds Free:\n                    §6§lWARMING UP",
+        "ListenPort": 25555,
+        "NotifyMessage": true,
+        "NotifyUpdate": true,
+        "TimeBeforeStoppingEmptyServer": 30,
+        "Whitelist": []
+    },
+    "Port": 25501,
+    "Server": {
+        "FileName": "server.jar",
+        "Folder": "./",
+        "Protocol": 756,
+        "Version": "1.17.1"
+    }
 }
