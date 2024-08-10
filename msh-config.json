@@ -15,7 +15,7 @@
     "ID": "52fdfc0721feefe75af65af163f82654f163f",
     "Debug": 1,
     "AllowSuspend": false,
-    "InfoHibernation": "                   §fMystiClouds Free:\n                   §b§lHIBERNATING",
+    "InfoHibernation": "                  §fMystiClouds Free\n                   §b§lHIBERNATING",
     "InfoStarting": "                   §fMystiClouds Free:\n                    §6§lWARMING UP",
     "NotifyUpdate": true,
     "NotifyMessage": true,
