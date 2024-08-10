@@ -7,7 +7,7 @@
   },
   "Commands": {
     "StartServer": "java <Commands.StartServerParam> -jar <Server.FileName> nogui",
-    "StartServerParam": "-Xmx1024M -Xms1024M",
+    "StartServerParam": "-Xmx1024M -Xms1024M -Xmn128m -XX:+DisableExplicitGC -XX:+UseNUMA -XX:MaxTenuringThreshold=15 -XX:MaxGCPauseMillis=30 -XX:GCPauseIntervalMillis=150 -XX:-UseGCOverheadLimit -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -XX:+UseCompressedOops -XX:+OptimizeStringConcat  -XX:ReservedCodeCacheSize=2048m -XX:+UseCodeCacheFlushing -XX:SoftRefLRUPolicyMSPerMB=2000 -XX:ParallelGCThreads=10",
     "StopServer": "stop",
     "StopServerAllowKill": 10
   },
