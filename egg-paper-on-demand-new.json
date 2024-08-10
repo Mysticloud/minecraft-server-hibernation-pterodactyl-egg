@@ -1,12 +1,12 @@
 {
-    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "_comment": "DO NOT EDIT - I DID EDIT GET GUD: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
     "meta": {
         "version": "PTDL_v2",
         "update_url": null
     },
     "exported_at": "2023-11-02T17:57:28+01:00",
-    "name": "PaperOnDemand New",
-    "author": "bolverblitz@ebg.pw",
+    "name": "Paper MSH",
+    "author": "admin@mysticlouds.com",
     "description": "High performance Spigot fork that aims to fix gameplay and mechanics inconsistencies and added hibernation.",
     "features": [
         "eula"
